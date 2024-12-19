@@ -1,7 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import { connect } from "mongoose";
-import { signUp } from './controllers/signupController.js';
 import userRouter from './routes/userRoute.js';
 const app = express()
 dotenv.config()
