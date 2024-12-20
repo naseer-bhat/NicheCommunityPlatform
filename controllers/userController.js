@@ -1,6 +1,8 @@
+import {User} from "../models/userMode.js"
+
 export const getUserById = async (req, res) => {
   const userId = parseInt(req.params.id); 
-  const user = users.find(u => u.id === userId);
+  const user = User.find(u => u.id === userId);
 
   if (user) {
       res.json(user);
