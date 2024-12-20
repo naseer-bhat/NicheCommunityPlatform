@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import argon2 from "argon2"; // Use Argon2 for password verification
-import { User } from "../models/authmodel.js"; // Ensure this path is correct
+import { User } from "../models/userMode.js"; // Ensure this path is correct
 
 dotenv.config();
 const SECRET_KEY = process.env.SECRET_KEY || "defaultSecretKey";
