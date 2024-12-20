@@ -1,12 +1,12 @@
 import {User} from "../models/userMode.js"
 export const getUserById = async (req, res) => {
   try {
-    const userId = req.query.id; 
+    const userId = req.params.id; // Access route parameter with req.params
     if (!userId) {
       return res.status(400).json({ message: "User ID is required" });
     }
 
-    const user = await User.findById(userId); 
+    const user = await User.findById(userId); // Mongoose query to find by ID
 
     if (user) {
       res.json(user);
