@@ -130,4 +130,5 @@ backend/
 |-- controllers/
 |   |-- userController.js
 |-- server.js
-
+Hosted on render
+https://nichecommunityplatform.onrender.com/
