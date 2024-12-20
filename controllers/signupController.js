@@ -1,4 +1,4 @@
-import { User } from "../models/authmodel.js";
+import { User } from "../models/userMode.js";
 import argon2 from "argon2";
 
 export const signUp = async (req, res) => {
