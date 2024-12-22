@@ -14,8 +14,8 @@ Threadify is a social web app built using **Vite** and **React**, designed to le
 **Fullstack**
 
 ## Deployed App
-- **Frontend**: [https://threadify.netlify.app](https://threadify.netlify.app)
-- **Backend**: [https://api.threadify.com](https://api.threadify.com)
+- **Frontend**: [https://threadify-app.netlify.app/](https://threadify-app.netlify.app/)
+- **Backend**: [https://nichecommunityplatform.onrender.com/](https://nichecommunityplatform.onrender.com/)
 - **Database**: [MongoDB Atlas](https://mongodb.com)
 
 ## Directory Structure
@@ -24,13 +24,12 @@ Threadify is a social web app built using **Vite** and **React**, designed to le
 
 
 ## Video Walkthrough of the project
-Attach a very short video walkthrough of all of the features [1 - 3 minutes].
+Attach a very short video walkthrough of all of the features [1 - 3 minutes] (https://youtube.com)
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthrough of the codebase [1 - 5 minutes].
+Attach a very short video walkthrough of the codebase [1 - 5 minutes] (https://youtube.com)
 
 ## Features
-- **User Authentication**: Secure sign-up and login system with JWT-based authentication.
 - **Article Feed**: A dynamic feed that displays articles based on user-selected topics.
 - **Thread Creation**: Users can create new threads to discuss a variety of topics.
 - **Likes and Comments**: Ability for users to like and comment on threads.
@@ -107,8 +106,8 @@ Example for interacting with the app:
 
 ## Credentials
 For testing purposes, use the following credentials:
-- **Username**: `testuser`
-- **Password**: `password123`
+- **Username**: `pranav@gmail.com`
+- **Password**: `12345678`
 
 ## APIs Used
 - **MongoDB Atlas**: To store user, thread, and article data.
@@ -116,94 +115,15 @@ For testing purposes, use the following credentials:
 
 ## API Endpoints
 
-### 1. Authentication
-
-- **POST** `/api/auth/signup`: Register a new user.
-  - Request body: 
-    ```json
-    { "username": "testuser", "password": "password123" }
-    ```
-  - Response:
-    ```json
-    { "message": "User created successfully", "token": "JWT_TOKEN" }
-    ```
-
-- **POST** `/api/auth/login`: Log in an existing user.
-  - Request body:
-    ```json
-    { "username": "testuser", "password": "password123" }
-    ```
-  - Response:
-    ```json
-    { "message": "Login successful", "token": "JWT_TOKEN" }
-    ```
-
-### 2. Articles
-
-- **GET** `/api/articles`: Fetch all articles.
-  - Response:
-    ```json
-    [
-      { "id": 1, "title": "Article 1", "content": "Lorem ipsum...", "author": "admin" },
-      { "id": 2, "title": "Article 2", "content": "Lorem ipsum...", "author": "admin" }
-    ]
-    ```
-
-- **GET** `/api/articles/:id`: Fetch a specific article.
-  - Response:
-    ```json
-    { "id": 1, "title": "Article 1", "content": "Lorem ipsum...", "author": "admin" }
-    ```
-
-### 3. Threads
-
-- **POST** `/api/threads`: Create a new thread.
-  - Request body:
-    ```json
-    { "title": "New Thread", "content": "This is a new thread" }
-    ```
-  - Response:
-    ```json
-    { "message": "Thread created successfully" }
-    ```
-
-- **GET** `/api/threads`: Get all threads.
-  - Response:
-    ```json
-    [
-      { "id": 1, "title": "New Thread", "content": "This is a new thread", "author": "testuser" }
-    ]
-    ```
-
-### 4. Likes and Comments
-
-- **POST** `/api/threads/:id/like`: Like a thread.
-  - Response:
-    ```json
-    { "message": "Thread liked successfully" }
-    ```
-
-- **POST** `/api/threads/:id/comment`: Add a comment to a thread.
-  - Request body:
-    ```json
-    { "comment": "Great thread!" }
-    ```
-  - Response:
-    ```json
-    { "message": "Comment added successfully" }
-    ```
-
 ## Technology Stack
 - **Frontend**:
   - **React**: For building dynamic user interfaces.
   - **Vite**: For fast and optimized bundling and development.
-  - **CSS (TailwindCSS or Styled Components)**: For styling the application.
+  - **CSS (Styled Components)**: For styling the application.
 
 - **Backend**:
   - **Node.js**: Runtime environment for the backend server.
-  - **Express.js**: Web framework for Node.js to build RESTful APIs.
   - **MongoDB**: NoSQL database to store user, article, thread, and comment data.
-  - **JWT**: JSON Web Tokens for authentication and authorization.
 
 - **Other Tools**:
   - **Netlify**: For deploying the frontend.
