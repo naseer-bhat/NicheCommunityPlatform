@@ -1,134 +1,134 @@
-Project Name
+# Threadify Web App
 
-Niche Community Platform
+## Introduction
+Threadify is a social web app built using **Vite** and **React**, designed to let users log in, read articles based on their preferred topics, and interact by posting threads, liking, commenting, and connecting with other users. The app offers a smooth and dynamic user experience for discovering and sharing content.
 
-Project Description
+### Key Features:
+- **User Login/Authentication**: Users can sign up, log in, and manage their accounts.
+- **Article Feed**: Users can view articles based on topics they are interested in.
+- **Post Threads**: Users can create threads to share thoughts and discussions.
+- **Like and Comment**: Interact with threads and posts through likes and comments.
+- **User Connections**: Users can connect with each other and engage in conversations.
 
-Niche Community Platform is a web application designed to enable users to connect and engage within specific communities. The backend provides APIs for user management, data retrieval, and secure interactions, while the frontend consumes these APIs to deliver a seamless user experience.
+## Project Type
+**Fullstack**
 
-Features
+## Deployed App
+- **Frontend**: [https://threadify-app.netlify.app/](https://threadify-app.netlify.app/)
+- **Backend**: [https://nichecommunityplatform.onrender.com/](https://nichecommunityplatform.onrender.com/)
+- **Database**: [MongoDB Atlas](https://mongodb.com)
 
-User Management
+## Directory Structure
 
-Create a new user.
 
-Fetch user details by ID.
 
-Authenticate users securely.
 
-APIs
+## Video Walkthrough of the project
+Attach a very short video walkthrough of all of the features [1 - 3 minutes] (https://youtube.com)
 
-RESTful APIs to handle backend operations.
+## Video Walkthrough of the codebase
+Attach a very short video walkthrough of the codebase [1 - 5 minutes] (https://youtube.com)
 
-Endpoints for CRUD operations.
+## Features
+- **Article Feed**: A dynamic feed that displays articles based on user-selected topics.
+- **Thread Creation**: Users can create new threads to discuss a variety of topics.
+- **Likes and Comments**: Ability for users to like and comment on threads.
+- **User Connections**: Users can connect with others, view profiles, and follow their posts.
 
-Security
+## Design Decisions or Assumptions
+- **Responsive Design**: The frontend is built with responsiveness in mind, ensuring the app works on all screen sizes.
+- **JWT Authentication**: JSON Web Tokens (JWT) are used to authenticate users, providing a secure, stateless session.
+- **MongoDB for Storage**: MongoDB is used to store user data, articles, threads, comments, and likes.
+- **Component-Based UI**: The frontend uses React's component-based architecture for easy maintainability and reusability.
 
-Role-based access control (User/Admin).
+## Installation & Getting Started
 
-Authentication tokens for API access.
+To set up and run this project locally, follow these instructions:
 
-Technology Stack
+### Prerequisites:
+- Node.js installed on your machine
+- MongoDB Atlas account (if using a remote database)
 
-Backend
+### Steps to get started:
 
-Language: Node.js
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/threadify.git
+    cd threadify
+    ```
 
-Framework: Express.js
+2. **Install dependencies**:
+    For the **frontend**:
+    ```bash
+    cd frontend
+    npm install
+    ```
 
-Database: MongoDB with Mongoose
+    For the **backend**:
+    ```bash
+    cd backend
+    npm install
+    ```
 
-Authentication: JWT (JSON Web Tokens)
+3. **Environment Variables**:
+    - Create a `.env` file in the **backend** directory for the following environment variables:
+        ```
+        MONGO_URI=your_mongodb_connection_string
+        JWT_SECRET=your_jwt_secret
+        ```
+    
+4. **Run the Backend**:
+    ```bash
+    cd backend
+    npm start
+    ```
 
-Middleware: CORS
+    The backend should now be running on `http://localhost:5000` (or whichever port you've set).
 
-Installation and Setup
+5. **Run the Frontend**:
+    ```bash
+    cd frontend
+    npm run dev
+    ```
 
-Prerequisites
+    The frontend will be available at `http://localhost:3000`.
 
-Node.js installed (v14 or higher recommended).
+## Usage
+Once both the frontend and backend are running:
 
-MongoDB installed and running locally or accessible via a cloud service.
+1. Open the frontend at `http://localhost:3000`.
+2. Sign up or log in to start browsing articles.
+3. Post threads, like, comment, and connect with other users.
 
-NPM or Yarn for package management.
+Example for interacting with the app:
+- On the homepage, you can filter articles based on topics.
+- You can post a new thread by navigating to the **Create Thread** page.
 
-Steps
+## Credentials
+For testing purposes, use the following credentials:
+- **Username**: `pranav@gmail.com`
+- **Password**: `12345678`
 
-Clone the Repository:
+## APIs Used
+- **MongoDB Atlas**: To store user, thread, and article data.
+- **JWT Authentication**: Used for secure login and session management.
 
-git clone https://github.com/your-repo/niche-community-platform.git
-cd niche-community-platform
+## API Endpoints
 
-Backend Setup:
+## Technology Stack
+- **Frontend**:
+  - **React**: For building dynamic user interfaces.
+  - **Vite**: For fast and optimized bundling and development.
+  - **CSS (Styled Components)**: For styling the application.
 
-cd backend
-npm install
-npm start
+- **Backend**:
+  - **Node.js**: Runtime environment for the backend server.
+  - **MongoDB**: NoSQL database to store user, article, thread, and comment data.
 
-Configure the .env file with your MongoDB URI, JWT secret, and other environment variables.
+- **Other Tools**:
+  - **Netlify**: For deploying the frontend.
+  - **MongoDB Atlas**: For hosting the database.
 
-Endpoints
+---
 
-1. Get User by ID
-
-URL: /getuser/:id
-
-Method: GET
-
-Description: Fetch user details by ID.
-
-Response:
-
-{
-  "_id": "6765918d5e7467861ea8a563",
-  "name": "Naseer",
-  "email": "n@123",
-  "role": "user",
-  "createdAt": "2024-12-20T15:47:25.631Z",
-  "__v": 0
-}
-
-2. Add User
-
-URL: /adduser
-
-Method: POST
-
-Description: Add a new user to the platform.
-
-Request Body:
-
-{
-  "_id": "6765918d5e7467861ea8a563",
-  "name": "Naseer",
-  "email": "n@123",
-  "role": "user",
-  "createdAt": "2024-12-20T15:47:25.631Z",
-  "__v": 0
-}
-
-Response:
-
-{
-  "_id": "6765918d5e7467861ea8a563",
-  "name": "Naseer",
-  "email": "n@123",
-  "role": "user",
-  "createdAt": "2024-12-20T15:47:25.631Z",
-  "__v": 0
-}
-
-Folder Structure
-
-Backend
-
-backend/
-|-- models/
-|   |-- userModel.js
-|-- routes/
-|   |-- userRouter.js
-|-- controllers/
-|   |-- userController.js
-|-- server.js
-Hosted on render
-https://nichecommunityplatform.onrender.com/
+Feel free to adjust or add any details depending on your app’s exact setup. This README will help guide users, developers, and reviewers through the setup, usage, and deployment of your **Threadify** app.
