@@ -24,10 +24,10 @@ Threadify is a social web app built using **Vite** and **React**, designed to le
 
 
 ## Video Walkthrough of the project
-Attach a very short video walkthrough of all of the features [1 - 3 minutes] (https://youtube.com)
+Attach a very short video walkthrough of all of the features [1 - 3 minutes] (https://youtu.be/I4bvaVmpc4I)
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthrough of the codebase [1 - 5 minutes] (https://youtube.com)
+Attach a very short video walkthrough of the codebase [1 - 5 minutes] (https://youtu.be/I4bvaVmpc4I)
 
 ## Features
 - **Article Feed**: A dynamic feed that displays articles based on user-selected topics.
