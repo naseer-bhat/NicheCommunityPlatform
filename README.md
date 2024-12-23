@@ -11,7 +11,7 @@ Threadify is a social web app built using **Vite** and **React**, designed to le
 - **User Connections**: Users can connect with each other and engage in conversations.
 
 ## Project Type
-**Fullstack**
+**Fullstack (https://threadify-app.netlify.app/) **
 
 ## Deployed App
 - **Frontend**: [https://threadify-app.netlify.app/](https://threadify-app.netlify.app/)
