@@ -53,8 +53,8 @@ To set up and run this project locally, follow these instructions:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/threadify.git
-    cd threadify
+    git https://github.com/naseer-bhat/NicheCommunityPlatform
+    cd NicheCommunityPlatform
     ```
 
 2. **Install dependencies**:
@@ -66,20 +66,19 @@ To set up and run this project locally, follow these instructions:
 
     For the **backend**:
     ```bash
-    cd backend
     npm install
     ```
 
 3. **Environment Variables**:
     - Create a `.env` file in the **backend** directory for the following environment variables:
         ```
-        MONGO_URI=your_mongodb_connection_string
-        JWT_SECRET=your_jwt_secret
+        PORT = 3000
+        db_url="mongodb+srv://naseer:mongo2024@cluster1.5jvgt.mongodb.net/"
+        SECRET_KEY="masaischoolproject"
         ```
     
 4. **Run the Backend**:
     ```bash
-    cd backend
     npm start
     ```
 
